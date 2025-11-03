@@ -41,6 +41,7 @@ typedef struct msg ticket;
 #define first ( current.deb )
 #define last  ( current.fin )
 #define best  ( current.scr )
+#define idt   ( current.idt )
 extern int   IDENT;
 extern ullong BEST;
 extern int   PORT;

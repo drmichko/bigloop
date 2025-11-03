@@ -1,29 +1,6 @@
-/*
- * a basic loop to
- * check big loop!
- */
-
 #include "bigloop.h"
 #include <stdlib.h>
-
-
-ullong wkf;
-
-int isperfect( ullong z )
-{ ullong d;
-  ullong s=1;
-  for( d = 2; d*d <=z; d++ )
-    if ( z % d == 0 ) {
-        wkf++;
-	s+= d;
-	if ( d*d != z ) s+= z/d;
-	if ( s > z ) return 0;
-    }
-  if ( s == z ) return 1;
-  return 0;
-}
-
-
+#include <time.h>
 
 int main(int argc, char *argv[])
 {
@@ -40,17 +17,24 @@ int main(int argc, char *argv[])
 
     if (biglregister())
 	while (getbigljob()) {
-	    wkf = 0;
 	    s = first;
+	    int tid = idt;
 	    while (s < last) {
-		if ( isperfect( s ) )
-                   sendvalue( s );
-                s++;
+	        char cmd [256];
+                sprintf( cmd, "/home/langevin/gitub/apin/newplay.sh %lld %d", s, tid ); 
+		int ret = system( cmd );
+	        if ( ret  == 0 )  s++;
+		else sleep(5);
+		struct timespec ts;
+    		ts.tv_sec = 0;          // secondes
+    		ts.tv_nsec = (30+random() %30 )  * 1000000L; 
+
+    		nanosleep(&ts, NULL);
 	    }
             // here you can :
 	    // sendvalue( ... )
 	    // sendscore( ... )
-	    closeloop(wkf);
+	    //closeloop(wkf);
 	    sendend();
 	}
 
