@@ -1,0 +1,70 @@
+#!/bin/bash
+
+GRAPPE=grappe.grp
+LOCAL=$( basename `pwd` )
+
+function hint
+{
+ echo usage of bigloop-0.2
+ echo "-g grappe : default grappe.grp"
+ exit 1
+}
+
+while getopts ":g:h" opt; do
+  case $opt in
+    g) GRAPPE=$OPTARG
+       ;;
+    h) hint;
+       ;;
+    \?)
+      echo "Invalid option: -$OPTARG" 
+      hint;
+      ;;
+  esac
+done
+
+qte=0
+echo looping $LOCAL
+rm -f ko.grp
+touch ko.grp
+
+while read plage log max mode
+do
+  echo $plage
+  if [ ${plage:0:1} != "#" ]
+  then
+    ipno=${plage%-*}
+    last=${plage#*-}
+    first=${ipno##*.}
+    pref=${ipno%.*}
+    if [ $last == $plage ]
+    then
+          last=$first
+    fi
+  
+    while [ $first -le  $last ]
+      do
+    	host=$pref.$first
+    	echo "$host $log $max"
+    	if ping -c1 -w2 $host >/dev/null
+     	  then
+               case $mode in
+                  sge) ssh $log@$host "$BIGLDIST/scripts/sub.sh $BIGLDIST/$LOCAL $max"  </dev/null
+                      ;;
+                  std) ssh  $log@$host "$BIGLDIST/scripts/run.sh $BIGLDIST/$LOCAL $max" </dev/null
+                      ;;
+                    *) echo $mode unknown mode 
+               esac
+         else
+	 echo $host >> ko.grp
+         let qte++
+        fi
+      let first++
+      done
+  fi
+done < $GRAPPE
+if [ $qte -gt 0  ]
+then
+  echo $qte unreachable hosts
+fi
+

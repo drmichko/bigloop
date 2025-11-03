@@ -1,0 +1,17 @@
+#imath02
+#10.2.73.204 langevin  12 
+#imathgpu
+#10.2.73.58   langevin  6
+#imath01
+#10.2.73.60   langevin 12
+#cluster wavester
+#10.2.81.2 langevin 4 batch
+#maitinfo 16
+#10.9.185.217-232 langevin 2 
+#licinfo  16
+#10.9.185.201-216 langevin  2
+#math     16
+#10.9.185.18-33   langevin  2
+#deug     48
+10.9.185.101-148 langevin  4
+#

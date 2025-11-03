@@ -1,0 +1,51 @@
+
+[root@ou812 langevin]# tcpdump -i any port 31415
+tcpdump: verbose output suppressed, use -v or -vv for full protocol decode
+listening on any, link-type LINUX_SLL (Linux cooked), capture size 65535 bytes
+10:14:54.023548 IP imath-gpu.47356 > ou812.univ-tln.fr.31415: UDP, length 30
+10:14:54.023967 IP ou812.univ-tln.fr.31415 > imath-gpu.47356: UDP, length 30
+10:14:54.024163 IP imath-gpu.50180 > ou812.univ-tln.fr.31415: UDP, length 30
+10:14:54.024862 IP ou812.univ-tln.fr.31415 > imath-gpu.50180: UDP, length 30
+10:14:54.025038 IP imath-gpu.58992 > ou812.univ-tln.fr.31415: UDP, length 30
+10:14:54.025098 IP imath-gpu.47859 > ou812.univ-tln.fr.31415: UDP, length 30
+10:14:54.025127 IP imath-gpu.60639 > ou812.univ-tln.fr.31415: UDP, length 30
+10:14:54.025181 IP imath-gpu.42568 > ou812.univ-tln.fr.31415: UDP, length 30
+10:14:54.031436 IP imath-gpu.48118 > ou812.univ-tln.fr.31415: UDP, length 30
+10:14:54.123780 IP imath-gpu.46630 > ou812.univ-tln.fr.31415: UDP, length 30
+10:14:54.124130 IP ou812.univ-tln.fr.31415 > imath-gpu.46630: UDP, length 30
+10:14:54.124271 IP imath-gpu.47183 > ou812.univ-tln.fr.31415: UDP, length 30
+10:14:54.124954 IP ou812.univ-tln.fr.31415 > imath-gpu.47183: UDP, length 30
+10:14:54.259247 IP imath-gpu.42622 > ou812.univ-tln.fr.31415: UDP, length 30
+10:14:54.259536 IP ou812.univ-tln.fr.31415 > imath-gpu.42622: UDP, length 30
+10:14:54.259667 IP imath-gpu.33483 > ou812.univ-tln.fr.31415: UDP, length 30
+10:14:54.260303 IP ou812.univ-tln.fr.31415 > imath-gpu.33483: UDP, length 30
+10:14:54.411210 IP imath-gpu.38591 > ou812.univ-tln.fr.31415: UDP, length 30
+10:14:54.411518 IP ou812.univ-tln.fr.31415 > imath-gpu.38591: UDP, length 30
+10:14:54.411638 IP imath-gpu.35935 > ou812.univ-tln.fr.31415: UDP, length 30
+10:14:54.412367 IP ou812.univ-tln.fr.31415 > imath-gpu.35935: UDP, length 30
+10:14:54.560972 IP imath-gpu.40221 > ou812.univ-tln.fr.31415: UDP, length 30
+10:14:54.561306 IP ou812.univ-tln.fr.31415 > imath-gpu.40221: UDP, length 30
+10:14:54.561429 IP imath-gpu.37773 > ou812.univ-tln.fr.31415: UDP, length 30
+10:14:54.562116 IP ou812.univ-tln.fr.31415 > imath-gpu.37773: UDP, length 30
+10:14:54.807825 IP bleue.univ-tln.fr.36807 > ou812.univ-tln.fr.31415: UDP, length 30
+10:14:54.808146 IP ou812.univ-tln.fr.31415 > bleue.univ-tln.fr.36807: UDP, length 30
+10:14:54.809628 IP bleue.univ-tln.fr.52304 > ou812.univ-tln.fr.31415: UDP, length 30
+10:14:54.809919 IP ou812.univ-tln.fr.31415 > bleue.univ-tln.fr.52304: UDP, length 30
+10:14:54.937325 IP imath-gpu.41465 > ou812.univ-tln.fr.31415: UDP, length 30
+10:14:54.937564 IP ou812.univ-tln.fr.31415 > imath-gpu.41465: UDP, length 30
+10:14:54.942672 IP imath-gpu.56758 > ou812.univ-tln.fr.31415: UDP, length 30
+10:14:54.943078 IP ou812.univ-tln.fr.31415 > imath-gpu.56758: UDP, length 30
+10:14:54.957214 IP bleue.univ-tln.fr.55355 > ou812.univ-tln.fr.31415: UDP, length 30
+10:14:54.957506 IP ou812.univ-tln.fr.31415 > bleue.univ-tln.fr.55355: UDP, length 30
+10:14:54.957754 IP bleue.univ-tln.fr.47666 > ou812.univ-tln.fr.31415: UDP, length 30
+
+
+
+
+
+
+
+
+
+
+

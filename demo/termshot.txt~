@@ -1,0 +1,201 @@
+
+[langevin@ou812 bigloop-0.2]$ make update
+make: « update » est à jour.
+
+[langevin@ou812 bigloop-0.2]$ cd demo
+
+[langevin@ou812 demo]$ cat bigloop.conf 
+# bigloop configuration
+#ou812.univ-tln.fr
+address=10.2.73.86
+port=31415
+ident=32
+first=1
+#uppercase means a power of 2
+Last=32
+Step=25
+
+[langevin@ou812 demo]$ cat grappe.grp 
+#imathgpu
+10.2.73.58   langevin  6  std
+#hexapus 16 
+#10.2.178.62  langevin  6  std
+#icosapus  16
+#10.2.178.81  langevin  16 std
+#imath01  12
+10.2.73.60   langevin 12  std
+#imath02  24
+#10.2.73.204 langevin  12 std
+#wavester
+#10.2.81.2 langevin 4 std
+#cluster wavester
+10.2.81.2 langevin 4 sge
+#maitinfo 16
+#10.9.185.217-232 langevin  2 std 
+#licinfo  16
+#10.9.185.201-216 langevin  2 std
+#math     16
+#10.9.185.18-33   langevin  2 std
+#deug A 16
+#10.9.185.101-116 langevin  4 std
+#deug B 16
+#10.9.185.117-132 langevin  4 std
+#deug C 16
+#10.9.185.133-148 langevin  4 std
+#
+
+[langevin@ou812 demo]$ biglcmd.sh 
+target bigloop-0.2/demo
+#imathgpu
+10.2.73.58 langevin 6 std
+ 09:57:52 up 29 days, 22:06,  7 users,  load average: 0.20, 1.21, 2.23
+#hexapus 16
+#10.2.178.62 langevin 6 std
+#icosapus 16
+#10.2.178.81 langevin 16 std
+#imath01 12
+10.2.73.60 langevin 12 std
+ 09:57:52 up 31 days, 28 min,  3 users,  load average: 1.01, 2.40, 4.57
+#imath02 24
+#10.2.73.204 langevin 12 std
+#wavester
+#10.2.81.2 langevin 4 std
+#cluster wavester
+10.2.81.2 langevin 4 sge
+  9:57am  up 82 days 14:09,  0 users,  load average: 0.00, 0.00, 0.00
+#maitinfo 16
+#10.9.185.217-232 langevin 2 std
+#licinfo 16
+#10.9.185.201-216 langevin 2 std
+#math 16
+#10.9.185.18-33 langevin 2 std
+#deug A 16
+#10.9.185.101-116 langevin 4 std
+#deug B 16
+#10.9.185.117-132 langevin 4 std
+#deug C 16
+#10.9.185.133-148 langevin 4 std
+#
+3 actions
+
+[langevin@ou812 demo]$ biglinst.sh 
+target bigloop-0.2/demo
+#imathgpu
+10.2.73.58 langevin 6 std
+ langevin 6 
+sending incremental file list
+
+sent 54 bytes  received 12 bytes  132.00 bytes/sec
+total size is 332  speedup is 5.03
+sending incremental file list
+bigloop.conf
+
+sent 237 bytes  received 37 bytes  182.67 bytes/sec
+total size is 136  speedup is 0.50
+sending incremental file list
+src/
+src/client.c
+
+sent 842 bytes  received 47 bytes  1778.00 bytes/sec
+total size is 1474  speedup is 1.66
+make: entrant dans le répertoire « /home/langevin/bigloop-0.2/demo »
+gcc  -O2 /home/langevin/bigloop-0.2/biglcommon.o /home/langevin/bigloop-0.2/biglclient.o -I/home/langevin/bigloop-0.2   src/client.c -o bigl.exe
+make: quittant le répertoire « /home/langevin/bigloop-0.2/demo »
+#hexapus 16
+#10.2.178.62 langevin 6 std
+#icosapus 16
+#10.2.178.81 langevin 16 std
+#imath01 12
+10.2.73.60 langevin 12 std
+10.2.73.58 langevin 12 
+building file list ... done
+
+sent 85 bytes  received 20 bytes  210.00 bytes/sec
+total size is 332  speedup is 3.16
+building file list ... done
+bigloop.conf
+
+sent 271 bytes  received 48 bytes  638.00 bytes/sec
+total size is 136  speedup is 0.43
+building file list ... done
+src/
+src/client.c
+
+sent 873 bytes  received 60 bytes  1866.00 bytes/sec
+total size is 1474  speedup is 1.58
+make: Entering directory `/home/langevin/bigloop-0.2/demo'
+gcc  -O2 /home/langevin/bigloop-0.2/biglcommon.o /home/langevin/bigloop-0.2/biglclient.o -I/home/langevin/bigloop-0.2   src/client.c -o bigl.exe
+make: Leaving directory `/home/langevin/bigloop-0.2/demo'
+#imath02 24
+#10.2.73.204 langevin 12 std
+#wavester
+#10.2.81.2 langevin 4 std
+#cluster wavester
+10.2.81.2 langevin 4 sge
+10.2.73.60 langevin 4 
+building file list ... done
+
+sent 85 bytes  received 20 bytes  210.00 bytes/sec
+total size is 332  speedup is 3.16
+building file list ... done
+bigloop.conf
+
+sent 271 bytes  received 48 bytes  212.67 bytes/sec
+total size is 136  speedup is 0.43
+building file list ... done
+src/
+src/client.c
+
+sent 873 bytes  received 60 bytes  1866.00 bytes/sec
+total size is 1474  speedup is 1.58
+make: Entering directory `/home/langevin/bigloop-0.2/demo'
+gcc  -O2 /home/langevin/bigloop-0.2/biglcommon.o /home/langevin/bigloop-0.2/biglclient.o -I/home/langevin/bigloop-0.2   src/client.c -o bigl.exe
+make: Leaving directory `/home/langevin/bigloop-0.2/demo'
+#maitinfo 16
+#10.9.185.217-232 langevin 2 std
+#licinfo 16
+#10.9.185.201-216 langevin 2 std
+#math 16
+#10.9.185.18-33 langevin 2 std
+#deug A 16
+#10.9.185.101-116 langevin 4 std
+#deug B 16
+#10.9.185.117-132 langevin 4 std
+#deug C 16
+#10.9.185.133-148 langevin 4 std
+
+[langevin@ou812 demo]$ nohup biglman &
+
+[langevin@ou812 demo]$ bigljoin.sh 
+target bigloop-0.2/demo
+10.2.73.58 langevin 6
+starting 6 processus on 10.2.73.58...
+6.5.4.3.2.1.
+10.2.73.60 langevin 12
+starting 12 processus on 10.2.73.60...
+12.11.10.9.8.7.6.5.4.3.2.1.
+10.2.81.2 langevin 4
+starting 4 processus on 10.2.81.2...
+4.3.2.1.
+
+looping 22 processus
+
+[langevin@ou812 demo]$ tail -8 nohup.out 
+job started on 10.2.81.2
+JOB 32:20 671088641 704643073 0 :  10.2.81.2:3713
+step=21/127 actifs : 22
+GET 32:21 0 0 0 :  10.2.81.2:3713
+>>> Sat Mar 17 10:00:59 2012
+job started on 10.2.81.2
+JOB 32:21 704643073 738197505 0 :  10.2.81.2:3713
+step=22/127 actifs : 22
+
+
+
+
+
+
+
+
+
+

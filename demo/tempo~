@@ -1,0 +1,400 @@
+Le script a dM-CM-)butM-CM-) sur sam. 17 mars 2012 10:11:59 CET
+^[]0;langevin@ou812:~/CC/bigloop-0.2/demo^G^[[?1034h[langevin@ou812 demo]$ cd ..^M
+^[]0;langevin@ou812:~/CC/bigloop-0.2^G[langevin@ou812 bigloop-0.2]$ make update^M
+make: M-BM-+ update M-BM-; est M-CM-  jour.^M
+^[]0;langevin@ou812:~/CC/bigloop-0.2^G[langevin@ou812 bigloop-0.2]$ cd demo^M
+^[]0;langevin@ou812:~/CC/bigloop-0.2/demo^G[langevin@ou812 demo]$ bigl^G^H^[[K^H^[[K^H^[[K^H^[[Kcat bigloop.conf ^M
+# bigloop configuration^M
+#ou812.univ-tln.fr^M
+address=10.2.73.86^M
+port=31415^M
+ident=25^M
+first=1^M
+#uppercase means a power of 2^M
+Last=25^M
+Step=19^M
+^[]0;langevin@ou812:~/CC/bigloop-0.2/demo^G[langevin@ou812 demo]$ biglcmd.sh ^M
+target bigloop-0.2/demo^M
+#imathgpu^M
+10.2.73.58 langevin 6 std^M
+ 10:13:08 up 29 days, 22:21,  7 users,  load average: 0.59, 2.64, 2.95^M
+#hexapus 16^M
+10.2.178.62 langevin 1 std^M
+bash: line 0: cd: bigloop-0.2/demo: No such file or directory^M
+ 10:14:10 up 135 days, 23:25,  0 users,  load average: 9.00, 9.00, 9.00^M
+#icosapus 16^M
+10.2.178.81 langevin 1 std^M
+bash: line 0: cd: bigloop-0.2/demo: No such file or directory^M
+ 10:13:08 up 135 days, 23:28,  0 users,  load average: 24.05, 23.89, 23.81^M
+#imath01 12^M
+10.2.73.60 langevin 12 std^M
+ 10:13:08 up 31 days, 43 min,  3 users,  load average: 1.17, 5.18, 6.05^M
+#imath02 24^M
+#10.2.73.204 langevin 12 std^M
+#wavester^M
+10.2.81.2 langevin 4 std^M
+ 10:13am  up 82 days 14:25,  0 users,  load average: 0.19, 0.05, 0.01^M
+#cluster wavester^M
+10.2.81.2 langevin 4 sge^M
+ 10:13am  up 82 days 14:25,  0 users,  load average: 0.19, 0.05, 0.01^M
+#maitinfo 16^M
+#10.9.185.217-232 langevin 2 std^M
+6 actions^M
+^[]0;langevin@ou812:~/CC/bigloop-0.2/demo^G[langevin@ou812 demo]$ vi ic^H^[[K^H^[[Kgr^Gappe.grp ^M
+^[[?1049h^[[?1h^[=^[[1;36r^[[?12;25h^[[?12l^[[?25h^[[27m^[[m^[[H^[[2J^[[?25l^[[36;1H"grappe.grp" 16L, 338C^[[>c^[[1;1H^[[34m#imathgpu^[[m^M
+10.2.73.58   langevin  6  std^M
+^[[34m#hexapus 16 ^[[m^M
+10.2.178.62  langevin  1  std^M
+^[[34m#icosapus  16^[[m^M
+10.2.178.81  langevin  1 std^M
+^[[34m#imath01  12^[[m^M
+10.2.73.60   langevin 12  std^M
+^[[34m#imath02  24^M
+#10.2.73.204 langevin  12 std^M
+#wavester^[[m^M
+10.2.81.2 langevin 4 std^M
+^[[34m#cluster wavester^[[m^M
+10.2.81.2 langevin 4 sge^M
+^[[34m#maitinfo 16^M
+#10.9.185.217-232 langevin  2 std ^[[m^M
+^[[1m^[[34m~                                                                               ^[[18;1H~                                                                               ^[[19;1H~                                                                               ^[[20;1H~                                                                               ^[[21;1H~                                                                               ^[[22;1H~                                                                               ^[[23;1H~                                                                               ^[[24;1H~                                                                               ^[[25;1H~                                                                               ^[[26;1H~                                                                               ^[[27;1H~                                                                               ^[[28;1H~                                                                               ^[[29;1H~                                                                               ^[[30;1H~                                                                               ^[[31;1H~                                                                               ^[[32;1H~                                                                               ^[[33;1H~                                                                               ^[[34;1H~                                                                               ^[[35;1H~                                                                               ^[[m^[[36;63H4,1^[[10CTout^[[4;1H^[[?12l^[[?25h^[P+q436f^[\^[P+q6b75^[\^[P+q6b64^[\^[P+q6b72^[\^[P+q6b6c^[\^[P+q2332^[\^[P+q2334^[\^[P+q2569^[\^[P+q2a37^[\^[P+q6b31^[\^[[?25l^[[36;65H2^[[4;2H^[[?12l^[[?25h^[[?25l^[[36;65H3^[[4;3H^[[?12l^[[?25h^[[?25l^[[36;65H4^[[4;4H^[[?12l^[[?25h^[[?25l^[[36;65H5^[[4;5H^[[?12l^[[?25h^[[?25l^[[36;65H6^[[4;6H^[[?12l^[[?25h^[[?25l^[[36;65H7^[[4;7H^[[?12l^[[?25h^[[?25l^[[36;65H8^[[4;8H^[[?12l^[[?25h^[[?25l^[[36;65H9^[[4;9H^[[?12l^[[?25h^[[?25l^[[36;65H10^[[4;10H^[[?12l^[[?25h^[[?25l^[[36;66H1^[[4;11H^[[?12l^[[?25h^[[?25l^[[36;66H2^[[4;12H^[[?12l^[[?25h^[[?25l^[[36;66H3^[[4;13H^[[?12l^[[?25h^[[?25l^[[36;66H4^[[4;14H^[[?12l^[[?25h^[[?25l^[[36;66H5^[[4;15H^[[?12l^[[?25h^[[?25l^[[36;66H6^[[4;16H^[[?12l^[[?25h^[[?25l^[[36;66H7^[[4;17H^[[?12l^[[?25h^[[?25l^[[36;66H8^[[4;18H^[[?12l^[[?25h^[[?25l^[[36;66H9^[[4;19H^[[?12l^[[?25h^[[?25l^[[36;65H20^[[4;20H^[[?12l^[[?25h^[[?25l^[[36;66H1^[[4;21H^[[?12l^[[?25h^[[?25l^[[36;66H2^[[4;22H^[[?12l^[[?25h^[[?25l^[[36;66H3^[[4;23H^[[?12l^[[?25h^[[?25l^[[36;66H4^[[4;24H^[[?12l^[[?25h^[[?25l^H   std^[[4;29H^[[K^[[4;24H^[[?12l^[[?25h^[[?25l^[[36;1H^[[1m-- INSERTION --^[[m^[[36;16H^[[K^[[36;63H4,24^[[9CTout^[[4;24H^[[?12l^[[?25h^[[?25l^H 4  std^[[36;66H5^[[4;25H^[[?12l^[[?25h^[[?25l^[[36;63H5,14^[[5;14H^[[?12l^[[?25h^[[?25l^[[36;63H6,25^[[6;25H^[[?12l^[[?25h^[[?25l^[[36;66H4^[[6;24H^[[?12l^[[?25h^[[?25l^[[36;66H3^[[6;23H^[[?12l^[[?25h^[[?25l^[[36;66H2^[[6;22H^[[?12l^[[?25h^[[?25l^[[36;66H0^[[6;20H^[[?12l^[[?25h^[[?25l^[[36;65H18^[[6;18H^[[?12l^[[?25h^[[?25l^[[36;66H6^[[6;16H^[[?12l^[[?25h^[[?25l^[[36;66H4^[[6;14H^[[?12l^[[?25h^[[?25l^[[36;66H3^[[6;13H^[[?12l^[[?25h^[[?25l^[[36;66H1^[[6;11H^[[?12l^[[?25h^[[?25l^[[36;65H9 ^[[6;9H^[[?12l^[[?25h^[[?25l^[[36;65H7^[[6;7H^[[?12l^[[?25h^[[?25l^[[36;65H5^[[6;5H^[[?12l^[[?25h^[[?25l^[[36;65H3^[[6;3H^[[?12l^[[?25h^[[?25l^[[36;65H2^[[6;2H^[[?12l^[[?25h^[[?25l^[[36;65H1^[[6;1H^[[?12l^[[?25h^[[?25li10.2.178.81  langevin  1 std^[[36;65H2^[[6;2H^[[?12l^[[?25h^[[?25l^H10.2.178.81  langevin  1 std^[[6;29H^[[K^[[36;65H1^[[6;1H^[[?12l^[[?25h^[[?25l^[[34m#10.2.178.81  langevin  1 std^[[m^[[36;65H2^[[6;2H^[[?12l^[[?25h^[[?25l^[[36;1H^[[K^[[36;63H6,1^[[10CTout^[[6;1H^[[?12l^[[?25h^[[?25l^[[36;63H^[[K^[[36;1H:^[[?12l^[[?25hw^[[?25l^[[?12l^[[?25hq^[[?25l^[[?12l^[[?25h^M^[[?25l"grappe.grp" 16L, 339C M-CM-)crit(s)^M^M^M
+^[[?1l^[>^[[?12l^[[?25h^[[?1049l^[]0;langevin@ou812:~/CC/bigloop-0.2/demo^G[langevin@ou812 demo]$ cat grappe.grp ^M
+#imathgpu^M
+10.2.73.58   langevin  6  std^M
+#hexapus 16 ^M
+10.2.178.62  langevin  4  std^M
+#icosapus  16^M
+#10.2.178.81  langevin  1 std^M
+#imath01  12^M
+10.2.73.60   langevin 12  std^M
+#imath02  24^M
+#10.2.73.204 langevin  12 std^M
+#wavester^M
+10.2.81.2 langevin 4 std^M
+#cluster wavester^M
+10.2.81.2 langevin 4 sge^M
+#maitinfo 16^M
+#10.9.185.217-232 langevin  2 std ^M
+^[]0;langevin@ou812:~/CC/bigloop-0.2/demo^G[langevin@ou812 demo]$ b^H^[[Knohup bi^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^G^G^G^Gbiglinst.sh ^M
+target bigloop-0.2/demo^M
+#imathgpu^M
+10.2.73.58 langevin 6 std^M
+ langevin 6 ^M
+sending incremental file list^M
+^M
+sent 54 bytes  received 12 bytes  132.00 bytes/sec^M
+total size is 332  speedup is 5.03^M
+sending incremental file list^M
+bigloop.conf^M
+^M
+sent 237 bytes  received 37 bytes  182.67 bytes/sec^M
+total size is 136  speedup is 0.50^M
+sending incremental file list^M
+^M
+sent 91 bytes  received 13 bytes  208.00 bytes/sec^M
+total size is 1474  speedup is 14.17^M
+make: entrant dans le rM-CM-)pertoire M-BM-+ /home/langevin/bigloop-0.2/demo M-BM-;^M
+make: Rien M-CM-  faire pour M-BM-+ all M-BM-;.^M
+make: quittant le rM-CM-)pertoire M-BM-+ /home/langevin/bigloop-0.2/demo M-BM-;^M
+#hexapus 16^M
+10.2.178.62 langevin 4 std^M
+10.2.73.58 langevin 4 ^M
+sending incremental file list^M
+makefile^M
+^M
+sent 429 bytes  received 31 bytes  920.00 bytes/sec^M
+total size is 332  speedup is 0.72^M
+sending incremental file list^M
+bigloop.conf^M
+^M
+sent 237 bytes  received 31 bytes  536.00 bytes/sec^M
+total size is 136  speedup is 0.51^M
+sending incremental file list^M
+src/^M
+src/client.c^M
+src/client.c~^M
+^M
+sent 1654 bytes  received 54 bytes  3416.00 bytes/sec^M
+total size is 1474  speedup is 0.86^M
+make: Entering directory `/home/langevin/bigloop-0.2/demo'^M
+gcc  -O2 /home/langevin/bigloop-0.2/biglcommon.o /home/langevin/bigloop-0.2/biglclient.o -I/home/langevin/bigloop-0.2   src/client.c -o bigl.exe^M
+make: Leaving directory `/home/langevin/bigloop-0.2/demo'^M
+#icosapus 16^M
+#10.2.178.81 langevin 1 std^M
+#imath01 12^M
+10.2.73.60 langevin 12 std^M
+10.2.178.62 langevin 12 ^M
+building file list ... done^M
+^M
+sent 85 bytes  received 20 bytes  70.00 bytes/sec^M
+total size is 332  speedup is 3.16^M
+building file list ... done^M
+bigloop.conf^M
+^M
+sent 271 bytes  received 48 bytes  638.00 bytes/sec^M
+total size is 136  speedup is 0.43^M
+building file list ... done^M
+^M
+sent 116 bytes  received 20 bytes  272.00 bytes/sec^M
+total size is 1474  speedup is 10.84^M
+make: Entering directory `/home/langevin/bigloop-0.2/demo'^M
+make: Nothing to be done for `all'.^M
+make: Leaving directory `/home/langevin/bigloop-0.2/demo'^M
+#imath02 24^M
+#10.2.73.204 langevin 12 std^M
+#wavester^M
+10.2.81.2 langevin 4 std^M
+10.2.73.60 langevin 4 ^M
+building file list ... done^M
+^M
+sent 85 bytes  received 20 bytes  210.00 bytes/sec^M
+total size is 332  speedup is 3.16^M
+building file list ... done^M
+bigloop.conf^M
+^M
+sent 271 bytes  received 48 bytes  212.67 bytes/sec^M
+total size is 136  speedup is 0.43^M
+building file list ... done^M
+^M
+sent 116 bytes  received 20 bytes  272.00 bytes/sec^M
+total size is 1474  speedup is 10.84^M
+make: Entering directory `/home/langevin/bigloop-0.2/demo'^M
+make: Nothing to be done for `all'.^M
+make: Leaving directory `/home/langevin/bigloop-0.2/demo'^M
+#cluster wavester^M
+10.2.81.2 langevin 4 sge^M
+10.2.81.2 langevin 4 ^M
+building file list ... done^M
+^M
+sent 85 bytes  received 20 bytes  210.00 bytes/sec^M
+total size is 332  speedup is 3.16^M
+building file list ... done^M
+^M
+sent 89 bytes  received 20 bytes  218.00 bytes/sec^M
+total size is 136  speedup is 1.25^M
+building file list ... done^M
+^M
+sent 116 bytes  received 20 bytes  272.00 bytes/sec^M
+total size is 1474  speedup is 10.84^M
+make: Entering directory `/home/langevin/bigloop-0.2/demo'^M
+make: Nothing to be done for `all'.^M
+make: Leaving directory `/home/langevin/bigloop-0.2/demo'^M
+#maitinfo 16^M
+#10.9.185.217-232 langevin 2 std^M
+^[]0;langevin@ou812:~/CC/bigloop-0.2/demo^G[langevin@ou812 demo]$ bigloo^H^[[K^H^[[K^Gman ^H^H^H^H^H^H^H^H^G^G^[[1@n^[[1@o^[[1@ ^H^[[1P^[[1@h^[[1@u^[[1@p^[[1@ ^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^G^G &^M
+[1] 28685^M
+^[]0;langevin@ou812:~/CC/bigloop-0.2/demo^G[langevin@ou812 demo]$ nohup: les entrM-CM-)es sont ignorM-CM-)es et la sortie est ajoutM-CM-)e M-CM-  `nohup.out'^M
+^M
+^[]0;langevin@ou812:~/CC/bigloop-0.2/demo^G[langevin@ou812 demo]$ bigl^Gjoin.sh ^M
+target bigloop-0.2/demo^M
+10.2.73.58 langevin 6^M
+starting 6 processus on 10.2.73.58...^M
+6.5.4.3.2.1.^M
+10.2.178.62 langevin 4^M
+starting 4 processus on 10.2.178.62...^M
+4.3.2.1.^M
+10.2.73.60 langevin 12^M
+starting 12 processus on 10.2.73.60...^M
+12.11.10.9.8.7.6.5.4.3.2.1.^M
+10.2.81.2 langevin 4^M
+starting 4 processus on 10.2.81.2...^M
+4.3.2.1.^M
+10.2.81.2 langevin 4^M
+starting 4 processus on 10.2.81.2...^M
+4.3.2.1.^M
+^M
+looping 30 processus^M
+^[]0;langevin@ou812:~/CC/bigloop-0.2/demo^G[langevin@ou812 demo]$ bigljoin.sh ^H^H^H^H^H^H^H^H^H^H^H^Hnohup biglman  &^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^[[4Pbiglinst.sh ^H^H^H^H^H^H^H^H^H^H^H^H^[[3@cat grappe.grp^[[C^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^[[1Pvi^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^[[C^H^H^H^H^H^H^H^H^H^H^H^H^H^H^[[3Pbiglcmd.sh^[[C^H^H^H^H^H^H^H^H^H^H^H^[[6@cat bigloop.conf^[[C^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^[[10Pd demo^H^H^H^H^H^Hat bigloop.conf ^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^G^G^G^G^Gtail nohup.out -8^H^[[K^H^[[K^H^H^H^H^H^H^H^H^H^H^[[1@-^[[1@8^[[1@ ^M
+STP 25:26 0 0 0 :  10.2.81.2:3713^M
+step=64/63 actifs : 28^M
+END 25:27 16252929 16777217 2149679 :  10.2.81.2:3713^M
+22 sec on 10.2.81.2^M
+step=64/63 actifs : 28^M
+GET 25:27 0 0 0 :  10.2.81.2:3713^M
+STP 25:27 0 0 0 :  10.2.81.2:3713^M
+step=64/63 actifs : 27^[]0;langevin@ou812:~/CC/bigloop-0.2/demo^G[langevin@ou812 demo]$ ^M
+^[]0;langevin@ou812:~/CC/bigloop-0.2/demo^G[langevin@ou812 demo]$ tail -8 nohup.out ^M
+STP 25:5 0 0 0 :  10.2.178.62:1698^M
+step=64/63 actifs : 7^M
+END 25:12 31457281 31981569 2218126 :  10.2.73.60:40934^M
+19 sec on 10.2.73.60^M
+step=64/63 actifs : 7^M
+GET 25:12 0 0 0 :  10.2.73.60:53662^M
+STP 25:12 0 0 0 :  10.2.73.60:53662^M
+step=64/63 actifs : 6^[]0;langevin@ou812:~/CC/bigloop-0.2/demo^G[langevin@ou812 demo]$ ^M
+^[]0;langevin@ou812:~/CC/bigloop-0.2/demo^G[langevin@ou812 demo]$ tail -8 nohup.out ^M
+step=64/63 actifs : 1^M
+END 25:9 27787265 28311553 2204739 :  10.2.178.62:3980^M
+36 sec on 10.2.178.62^M
+step=64/63 actifs : 1^M
+GET 25:9 0 0 0 :  10.2.178.62:26024^M
+STP 25:9 0 0 0 :  10.2.178.62:26024^M
+step=64/63 actifs : 0^M
+waiting for zombies...^[]0;langevin@ou812:~/CC/bigloop-0.2/demo^G[langevin@ou812 demo]$ ^M
+^[]0;langevin@ou812:~/CC/bigloop-0.2/demo^G[1]+  Done                    nohup biglman^M
+[langevin@ou812 demo]$ cat^G ou^G^H^[[K^H^[[Klog/re^G^H^[[K^H^[[Kou^Gtput-lo^G^H^[[K^H^[[K32.log ^M
+value=1^M
+value=6^M
+value=28^M
+value=496^M
+value=8128^M
+^[]0;langevin@ou812:~/CC/bigloop-0.2/demo^G[langevin@ou812 demo]$ ^M
+^[]0;langevin@ou812:~/CC/bigloop-0.2/demo^G[langevin@ou812 demo]$ ^M
+^[]0;langevin@ou812:~/CC/bigloop-0.2/demo^G[langevin@ou812 demo]$ ls log^M
+info-25.log  output-25.log  proc-25.log^M
+^[]0;langevin@ou812:~/CC/bigloop-0.2/demo^G[langevin@ou812 demo]$ cat out^G^H^[[K^H^[[K^H^[[Klog-^G25^G^H^[[K^H^[[K^H^[[K/output-25.log ^M
+value=1^M
+value=6^M
+value=28^M
+value=496^M
+value=8128^M
+value=33550336^M
+^M
+departure     : Sat Mar 17 10:14:44 2012^M
+^M
+arrival       : Sat Mar 17 10:16:06 2012^M
+^M
+elapse time   : 82^M
+cpu time      : 1047^M
+job count     : 64^M
+processors    : 30^M
+work factor   : 135671103^M
+sec / wkf     : 1.0000^M
+ perf ms            ip                     wkf     cpu  job cpu^M
+   0.709    10.2.73.58                39471571     216   19  20 imath-gpu^M
+   0.869    10.2.73.60                62296514     418   29  39 imath01^M
+   1.459   10.2.178.62                16786773     189    8  18 bleue.univ-tln.fr^M
+   1.696     10.2.81.2                17116245     224    8  21 wavester.univ-tln.fr^M
+^[]0;langevin@ou812:~/CC/bigloop-0.2/demo^G[langevin@ou812 demo]$ ^M^[[K[langevin@ou812 demo]$ ^M^[[K[langevin@ou812 demo]$ ^M^[[K[langevin@ou812 demo]$ ^M^[[K[langevin@ou812 demo]$ ^M^[[K[langevin@ou812 demo]$ ^M^[[K[langevin@ou812 demo]$ ^M^[[K[langevin@ou812 demo]$ ^M^[[K[langevin@ou812 demo]$ ^M^[[K[langevin@ou812 demo]$ ^M^[[K[langevin@ou812 demo]$ ^M^[[K[langevin@ou812 demo]$ biglgraph.sh 25^M
+making pictures^M
+Could not find/open font when opening font "arial", using internal non-scalable font^M
+Could not find/open font when opening font "arial", using internal non-scalable font^M
+^[]0;langevin@ou812:~/CC/bigloop-0.2/demo^G[langevin@ou812 demo]$ biglstat.sh ^M
+target bigloop-0.2/demo^M
+grappe.grp for status^M
+#imathgpu^M
+10.2.73.58^M
+#hexapus^M
+10.2.178.62^M
+#icosapus^M
+#10.2.178.81^M
+#imath01^M
+10.2.73.60^M
+#imath02^M
+#10.2.73.204^M
+#wavester^M
+10.2.81.2^M
+#cluster^M
+10.2.81.2^M
+#maitinfo^M
+#10.9.185.217-232^M
+^M
+5 hosts^M
+^[]0;langevin@ou812:~/CC/bigloop-0.2/demo^G[langevin@ou812 demo]$ biglstat.sh ^H^H^H^H^H^H^H^Hgraph.sh 25^H^H^H^H^H^H^H^H^H^H^H^H^H^H^Hcat log/output-25.log ^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^Hls log^[[K^H^H^H^H^H^Hcat log/output-32.log ^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^[[4Ptail -8 nohup.out^[[C^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^[[6Pbigljoin.sh^[[C^H^H^H^H^H^H^H^H^H^H^H^Hnohup biglman  &^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^H^[[4Pbiglinst.sh ^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[K^H^[[Kcmd.sh -c "rm data/*"^H^H^H^H^H^H^H^H^[[1Pdata/*"^H^H^H^H^H^H^H^H^[[1Pdata/*"^H^H^H^H^H^H^H^H^[[1Pdata/*"^H^H^H^H^H^H^Hldata/*"^H^H^H^H^H^H^Hsdata/*"^H^H^H^H^H^H^H data/*"^H^H^H^H^H^H^H^M
+target bigloop-0.2/demo^M
+#imathgpu^M
+10.2.73.58 langevin 6 std^M
+data/trace-25-0.log^M
+data/trace-25-1.log^M
+data/trace-25-2.log^M
+data/trace-25-3.log^M
+data/trace-25-4.log^M
+data/trace-25-6.log^M
+#hexapus 16^M
+10.2.178.62 langevin 4 std^M
+data/trace-25-5.log^M
+data/trace-25-7.log^M
+data/trace-25-8.log^M
+data/trace-25-9.log^M
+#icosapus 16^M
+#10.2.178.81 langevin 1 std^M
+#imath01 12^M
+10.2.73.60 langevin 12 std^M
+data/trace-25-10.log^M
+data/trace-25-11.log^M
+data/trace-25-12.log^M
+data/trace-25-13.log^M
+data/trace-25-14.log^M
+data/trace-25-15.log^M
+data/trace-25-16.log^M
+data/trace-25-17.log^M
+data/trace-25-18.log^M
+data/trace-25-19.log^M
+data/trace-25-20.log^M
+data/trace-25-22.log^M
+#imath02 24^M
+#10.2.73.204 langevin 12 std^M
+#wavester^M
+10.2.81.2 langevin 4 std^M
+data/trace-25-21.log^M
+data/trace-25-23.log^M
+data/trace-25-24.log^M
+data/trace-25-25.log^M
+data/trace-25-26.log^M
+data/trace-25-27.log^M
+data/trace-25-28.log^M
+data/trace-25-29.log^M
+#cluster wavester^M
+10.2.81.2 langevin 4 sge^M
+data/trace-25-21.log^M
+data/trace-25-23.log^M
+data/trace-25-24.log^M
+data/trace-25-25.log^M
+data/trace-25-26.log^M
+data/trace-25-27.log^M
+data/trace-25-28.log^M
+data/trace-25-29.log^M
+#maitinfo 16^M
+#10.9.185.217-232 langevin 2 std^M
+5 actions^M
+^[]0;langevin@ou812:~/CC/bigloop-0.2/demo^G[langevin@ou812 demo]$ biglcmd.sh -c "ls data/*"^H^H^H^H^H^H^H^H^H^[[1P data/*"^H^H^H^H^H^H^H^H^H^[[1P data/*"^H^H^H^H^H^H^H^Hr data/*"^H^H^H^H^H^H^H^Hm data/*"^H^H^H^H^H^H^H^H^M
+target bigloop-0.2/demo^M
+#imathgpu^M
+10.2.73.58 langevin 6 std^M
+#hexapus 16^M
+10.2.178.62 langevin 4 std^M
+#icosapus 16^M
+#10.2.178.81 langevin 1 std^M
+#imath01 12^M
+10.2.73.60 langevin 12 std^M
+#imath02 24^M
+#10.2.73.204 langevin 12 std^M
+#wavester^M
+10.2.81.2 langevin 4 std^M
+#cluster wavester^M
+10.2.81.2 langevin 4 sge^M
+rm: cannot remove `data/*': No such file or directory^M
+#maitinfo 16^M
+#10.9.185.217-232 langevin 2 std^M
+5 actions^M
+^[]0;langevin@ou812:~/CC/bigloop-0.2/demo^G[langevin@ou812 demo]$ cat termshot.txt ^M
+Le script a dM-CM-)butM-CM-) sur sam. 17 mars 2012 10:11:59 CET^M
+^[]0;langevin@ou812:~/CC/bigloop-0.2/demo^G^[[?1034h[langevin@ou812 demo]$ cd ..^M^M
+^[]0;langevin@ou812:~/CC/bigloop-0.2^G[langevin@ou812 bigloop-0.2]$ make update^M^M
+make: M-BM-+ update M-BM-; est M-CM-  jour.^M^M
+^[]0;langevin@ou812:~/CC/bigloop-0.2^G[langevin@ou812 bigloop-0.2]$ cd demo^M^M
+^[]0;langevin@ou812:~/CC/bigloop-0.2/demo^G[langevin@ou812 demo]$ bigl^G^H^[[K^H^[[K^H^[[K^H^[[Kcat bigloop.conf ^M^M
+# bigloop configuration^M^M
+#ou812.univ-tln.fr^M^M
+address=10.2.73.86^M^M
+port=31415^M^M
+ident=25^M^M
+first=1^M^M
+#uppercase means a power of 2^M^M
+Last=25^M^M
+Step=19^M^M
+^[]0;langevin@ou812:~/CC/bigloop-0.2/demo^G[langevin@ou812 demo]$ biglcmd.sh ^M^M
+target bigloop-0.2/demo^M^M
+#imathgpu^M^M
+10.2.73.58 langevin 6 std^M^M
+ 10:13:08 up 29 days, 22:21,  7 users,  load average: 0.59, 2.64, 2.95^M^M
+#hexapus 16^M^M
+10.2.178.62 langevin 1 std^M^M
+bash: line 0: cd: bigloop-0.2/demo: No such file or directory^M^M
+ 10:14:10 up 135 days, 23:25,  0 users,  load average: 9.00, 9.00, 9.00^M^M
+#icosapus 16^M^M
+10.2.178.81 langevin 1 std^M^M
+bash: line 0: cd: bigloop-0.2/demo: No such file or directory^M^M
+ 10:13:08 up 135 days, 23:28,  0 users,  load average: 24.05, 23.89, 23.81^M^M
+#imath01 12^M^M
+10.2.73.60 langevin 12 std^M^M

@@ -1,0 +1,13 @@
+#imath02
+#10.2.73.204 langevin  12 std
+#imathgpu
+10.2.73.58  langevin  6 std
+#imath01
+10.2.73.60       langevin  12 std
+#maitinfo
+10.9.185.217-232 langevin  2 std
+#wavester
+10.2.81.2 langevin 32 sge
+#hexapus
+10.2.178.62 langevin 6 std
+#

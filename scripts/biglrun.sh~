@@ -1,0 +1,39 @@
+#!/bin/bash
+dir=$1
+max=$2
+cd  $1
+if [ -f bigloop.conf ]
+then
+  source bigloop.conf
+else
+  echo no bigloop.conf
+  #exit 1
+fi
+nproc=$( grep -c processor /proc/cpuinfo )
+
+echo $nproc
+
+avg=$( cat /proc/loadavg | cut -d ' ' -f3 )
+av2=$( cat /proc/loadavg | cut -d ' ' -f2 )
+av1=$( cat /proc/loadavg | cut -d ' ' -f1 )
+echo charge $av1 $av2 $avg
+
+if test $(echo "$av1 > $av2" | bc -l) == 1 ; then
+        av2=$av1
+fi
+if test $(echo "$av2 > $avg" | bc -l) == 1 ; then
+        avg=$av2
+fi
+nproc=$(echo "scale($nproc-$avg*$nproc)" | bc -l)
+if [ $nproc -ge $max ]
+then
+  max=$nproc
+fi
+echo starting $nproc processus
+while [ $nproc -gt 0 ]
+do
+  nohup nice $CLIENT 2>/dev/null 1>/dev/null 0</dev/null &
+  echo -n $nproc"."
+  let  nproc--
+done
+
