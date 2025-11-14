@@ -1,0 +1,15 @@
+
+departure     : Mon Nov  3 20:22:01 2025
+
+arrival       : Mon Nov  3 23:09:37 2025
+
+elapse time   : 10056
+cpu time      : 937740
+job count     : 1826
+processors    : 159
+work factor   : 0
+sec / wkf     : -nan
+ perf ms            ip                     wkf     cpu  job cpu
+    -nan  192.168.1.22                       0  207195  379  22 rayol-node-3.local
+    -nan  192.168.1.21                       0  367889  639  39 rayol-node-2.local
+    -nan  192.168.1.20                       0  362656  808  38 rayol-node-1.local
